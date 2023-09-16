@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  /*  */
+    font-family: 'Roboto Mono', monospace;
+}
+
+body
+{
+    background-color: #fff;
+}
+.hero-section{
+    height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(97deg, rgb(255, 255, 255) 0%, rgb(26, 160, 237) 100%);
+
+    .nav-bar{
+        height: 3rem;
+        width: 100%;
+        background:#ebf0f2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-items: center;
+        padding: 0px 50px;
+    
+        .logo{
+        color: #3498db;
+        font-weight: 500;
+        font-size: 25px;
+
+        .big{
+            font-weight: 700;
+            font-size: 35px;
+        }
+
+        }
+
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-basis: 20%;
+
+            a {
+                flex-grow:1;
+                text-decoration: none;
+                color: black;
+                font-weight: 500;
+                font-size: 12px;
+            }
+
+            a:hover{
+                color: #3498db;
+            }
+        }
+    
+        .btn{
+            height: 30px;
+            width: 90px;
+            background-color: var(--button);
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            color: #ffffff;
+            font-size: 10px;
+            font-weight: 500;
+        }
+
+        .btn:hover{
+            background-color: #ffffff;
+            color: #3498db;
+        }
+    }
+
+}
+
+.hero{
+    height: 50vh;
+    width: 50vw;
+    margin: auto;
+    margin-top: 100px;
+
+    .small{
+        height: 30px;
+        margin: 0 26%;
+        margin-top: 10px;
+        border-radius: 50px;
+        padding: 7px 7px;
+        font-size: 10px;
+        outline: none;
+        border: none;
+        background: rgba(105, 185, 238, 0.17);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(0px);
+        -webkit-backdrop-filter: blur(0px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+
+        .btn-1 a{
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+        }
+        .btn-1 a:hover{
+            color: #3498db;
+        }
+    }
+
+    .greeting{
+        background-image: linear-gradient(97deg, rgb(90, 84, 84) 0%, rgb(26, 160, 237) 100%);
+        background-size: cover;
+        background-clip: text;
+        color: transparent;
+        text-align: center;
+        font-size: 50px;
+
+        margin-top: 50px;
+    }
+
+    .middle{
+        text-align: center;
+        font-size: 15px;
+        font-weight: 400;
+        color: #fff;
+        margin-top: 50px;
+    }
+
+}
+
+.section-one{
+    display: flex;
+    flex-direction: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+
+    .me{
+        width: 60%;
+        text-align: center;
+
+        .who{
+            color: #3498db;
+            font-size: 50px;
+            font-weight: 700;
+        }
+        .define{
+            padding: 15px 0;
+            color: #1f2746;
+            font-weight: 500;
+        }
+    
+        .lorem{
+            color: #adb0b3;
+            font-size: 12px;
+            font-weight: 300;
+        }
+    
+        .social-media{
+            padding: 15px;
+            color: #1f2746;
+            font-size: 15px;
+        
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+    
+}
+
+.good{
+    padding: 0 50px;
+    align-items: center;
+    background: linear-gradient(9deg, rgb(127, 255, 212) 0%, rgb(225, 225, 225) 100%);
+
+    .second{
+        text-align: center;
+        color: #1f2746;
+        padding: 10px;
+        padding-top: 15px;
+    }
+    .first{
+        text-align: center;
+    }
+    .third{
+        height: 60px;
+        width: 60px;
+        align-self: center;
+    }
+
+    .grid-lang{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .grid-lang > div{
+        height: 200px;
+        gap: 30px;
+    }
+    .grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        border: 1px solid;
+        border-radius: 7px;
+        gap: 10px;
+        margin: 10px;
+        box-shadow: 5px 10px 18px #888888;
+    }
+
+    .grid:hover{
+        background: linear-gradient(97deg, rgb(255, 255, 255) 0%, rgb(26, 160, 237) 100%);
+        color: #fff;
+    }
+}
